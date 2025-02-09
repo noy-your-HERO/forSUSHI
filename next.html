@@ -125,7 +125,9 @@
             
             // Play audio on first user interaction (click/tap)
             document.addEventListener("click", function () {
+                audio.muted=false;
                 audio.play();
+
             }, { once: true });
         });
 
